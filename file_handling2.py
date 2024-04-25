@@ -11,7 +11,7 @@ def main():
     #Creating student data and find highest GWA
         highest_gwa = 0.0
         highest_gwa_student = ""
-        for line in line:
+        for line in lines:
             parts = line.strip().split(",")
             if len(parts) == 2:
                 name, gwa_str = parts
@@ -20,13 +20,13 @@ def main():
                     if gwa > highest_gwa:
                         highest_gwa = gwa
                         highest_gwa_student = name
-                    except ValueError:
-                        print(f"Invalid GWA for student {name}: ({highest_gwa})")
+                except ValueError:
+                    print(f"Invalid GWA for student {name}: ({highest_gwa})")
                 #Printing the output
         if highest_gwa_student:
             print(f"The student with the highest GWA is: {highest_gwa_student} ({highest_gwa})")
         else:
-             print("No valid student data found.")
+            print("No valid student data found.")
 
     except FileNotFoundError:
         print("Error: File not found.")
