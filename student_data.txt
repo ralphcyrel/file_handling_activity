@@ -7,7 +7,7 @@ Adam Smith,1.9
 Alex Johnson,2.7
 Emily Brown,3.6
 Michael Davis,1.5
-Sarah Wilson,4.9
+Sarah Wilson,4.2
 Kevin Martinez,2.2
 Jessica Thompson,1.4
 David Anderson,2.7

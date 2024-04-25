@@ -13,10 +13,13 @@ def main():
         highest_gwa_student = ""
         for line in line:
             parts = line.strip().split(",")
-        if len(parts) == 2:
-            name, gwa_str = parts
-            try:
-                gwa = float(gwa_str)
-                if gwa > highest_gwa:
-                    highest_gwa = gwa
+            if len(parts) == 2:
+                name, gwa_str = parts
+                    try:
+                        gwa = float(gwa_str)
+                        if gwa > highest_gwa:
+                            highest_gwa = gwa
+
+highest_gwa_student = name
+
     #Printing the output
