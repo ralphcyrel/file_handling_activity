@@ -19,4 +19,10 @@ def main():
         for num in odd_numbers:
             odd_file.write(str(num) + "\n")
 #printing the proof of extracting
-print("Even and Odd numbers extracted and saved successfully.")
+    print("Even and Odd numbers extracted and saved successfully.")
+
+except FileNotFoundError:
+    print("Error: file 'number.txt' not found.")
+except Exception as e:
+    print("An error has occurred: ", e)
+
