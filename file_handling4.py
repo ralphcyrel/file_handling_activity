@@ -11,11 +11,11 @@ def process_integers(integers_txt, output_double_filename, output_triple_filenam
 
 #creating a code that will find the double and triple of the following integers.
         even_numbers_squared = [num ** 2 for num in numbers if num % 2 == 0]
-        odd_numbers_square = [num ** 3 for num in numbers if num % 2 != 0]
+        odd_numbers_cubed = [num ** 3 for num in numbers if num % 2 != 0]
 
         with open(output_double_filename, "w") as output_double_file:
             for num_squared in even_numbers_squared:
-                output_double_filewrite(str(num_squared) + "\n")
+                output_double_file.write(str(num_squared) + "\n")
 
         with open(output_triple_filename, "w") as output_triple_file:
             for num_cubed in odd_numbers_cubed:
@@ -25,7 +25,7 @@ def process_integers(integers_txt, output_double_filename, output_triple_filenam
 
     except FileNotFoundError:
         print("Error")
-    except Exeption as e:
+    except Exception as e:
         print(f"An error occurred: {e}")
 #extracting the integers to its respective file
 process_integers("integers.txt", "double.txt", "triple.txt")
