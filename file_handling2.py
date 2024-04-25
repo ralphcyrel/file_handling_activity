@@ -20,10 +20,16 @@ def main():
                         if gwa > highest_gwa:
                             highest_gwa = gwa
                             highest_gwa_student = name
-                        excep ValueError:
+                        except ValueError:
                             print(f"Invalid GWA for student {name}: ({highest_gwa})")
-                        else:
-                            print("No valid student data found.")
+
+                if highest_gwa_student:
+                    print(f"The student with the highest GWA is: {highest_gwa_student} ({highest_gwa})")
+                else:
+                    print("No valid student data found.")
+
+         
+
 
 
 
