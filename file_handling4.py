@@ -22,4 +22,9 @@ def process_integers(integers_txt, output_double_filename, output_triple_filenam
                 output_triple_file.write(str(num_cubed) + "\n")
 
         print("Completed. Check the files.")
+
+    except FileNotFoundError:
+        print("Error")
+    except Exeption as e:
+        print(f"An error occurred: {e}")
 #extracting the integers to its respective file
