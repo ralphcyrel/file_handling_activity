@@ -11,7 +11,11 @@ def main():
     even_numbers = [num for num in numbers if num % 2 == 0]
     odd_numbers = [num for num in numbers if num % 2 != 0]
 #write even number to "even.txt" file.
-
+    with open("even.txt", "w") as even file:
+        for num in even_numbers:
+            even_file.write(str(num) + "\n")
 #write odd number to "odd.txt" file.
-
+    with open("odd.txt", "w") as odd file:
+        for num in odd_numbers:
+            odd_file.write(str(num) + "\n")
 #printing the proof of extracting
