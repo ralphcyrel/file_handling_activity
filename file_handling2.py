@@ -28,7 +28,14 @@ def main():
                 else:
                     print("No valid student data found.")
 
-         
+        except FileNotFoundError:
+            print("Error: File not found.")
+        except Exception as e:
+            print("an error occurred:", e)
+
+if __name__ == "__main__":
+    main()
+
 
 
 
