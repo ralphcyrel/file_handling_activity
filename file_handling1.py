@@ -19,3 +19,4 @@ def main():
         for num in odd_numbers:
             odd_file.write(str(num) + "\n")
 #printing the proof of extracting
+print("Even and Odd numbers extracted and saved successfully.")
