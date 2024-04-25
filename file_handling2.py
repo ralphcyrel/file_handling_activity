@@ -23,10 +23,10 @@ def main():
                     except ValueError:
                         print(f"Invalid GWA for student {name}: ({highest_gwa})")
                 #Printing the output
-                if highest_gwa_student:
-                    print(f"The student with the highest GWA is: {highest_gwa_student} ({highest_gwa})")
-                else:
-                    print("No valid student data found.")
+        if highest_gwa_student:
+            print(f"The student with the highest GWA is: {highest_gwa_student} ({highest_gwa})")
+        else:
+             print("No valid student data found.")
 
         except FileNotFoundError:
             print("Error: File not found.")
