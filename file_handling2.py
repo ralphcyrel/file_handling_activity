@@ -19,6 +19,15 @@ def main():
                         gwa = float(gwa_str)
                         if gwa > highest_gwa:
                             highest_gwa = gwa
+                            highest_gwa_student = name
+                        excep ValueError:
+                            print(f"Invalid GWA for student {name}: ({highest_gwa})")
+                        else:
+                            print("No valid student data found.")
+
+
+
+
 
 highest_gwa_student = name
 
