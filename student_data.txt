@@ -1,0 +1,20 @@
+John Doe,3.9
+Jane Smith,4.0
+Michael Johnson,1.7
+Michael Jordan,4.2
+Bongbong Marcos,4.8
+Adam Smith,1.9
+Alex Johnson,2.7
+Emily Brown,3.6
+Michael Davis,1.5
+Sarah Wilson,4.9
+Kevin Martinez,2.2
+Jessica Thompson,1.4
+David Anderson,2.7
+Diwata Pares Overload,4.9
+Ethan White,1.6
+Samantha Lee,3.8
+Jacob Harris,3.3
+Ashley Jackson,3.5
+Matthew Taylor,3.7
+Lily Moore,3.9
