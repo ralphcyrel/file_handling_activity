@@ -15,14 +15,14 @@ def main():
             parts = line.strip().split(",")
             if len(parts) == 2:
                 name, gwa_str = parts
-                    try:
-                        gwa = float(gwa_str)
-                        if gwa > highest_gwa:
-                            highest_gwa = gwa
-                            highest_gwa_student = name
-                        except ValueError:
-                            print(f"Invalid GWA for student {name}: ({highest_gwa})")
-
+                try:
+                    gwa = float(gwa_str)
+                    if gwa > highest_gwa:
+                        highest_gwa = gwa
+                        highest_gwa_student = name
+                    except ValueError:
+                        print(f"Invalid GWA for student {name}: ({highest_gwa})")
+                #Printing the output
                 if highest_gwa_student:
                     print(f"The student with the highest GWA is: {highest_gwa_student} ({highest_gwa})")
                 else:
@@ -39,9 +39,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-highest_gwa_student = name
-
-    #Printing the output
